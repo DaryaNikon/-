@@ -1,0 +1,1043 @@
+@font-face {
+  font-family: regular;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: bold;
+  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  font-style: normal;
+}
+
+h1 {
+  font-family: bold;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: bold;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: bold;
+  text-transform: uppercase;
+}
+
+.a-h2 {
+  text-decoration: none;
+  color: black;
+  font-family: bold;
+}
+
+.a-h3 {
+  text-decoration: none;
+  color: black;
+  font-family: bold;
+}
+
+.a-h4 {
+  text-decoration: none;
+  color: black;
+  font-family: bold;
+}
+
+.a-trends {
+  text-decoration: none;
+  color: white;
+  font-family: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ШАПКА */
+
+.header {
+  background-image: url(https://i.postimg.cc/T340GM1d/banner-bg.jpg);
+  background-color: #2F4F4F;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.header::before {
+  content: '';
+  display: block;
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  z-index: -1;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding: 28px 15px 0 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 180px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.ul-menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.li-menu {
+  margin-left: 35px;
+}
+
+.a-menu {
+  text-decoration: none;
+  color: white;
+  font-family: regular;
+  font-size: 13px;
+  text-transform: uppercase; 
+}
+
+.main-title {
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 119px;
+  padding-bottom: 147px;
+}
+
+/* В ТРЕНДЕ */
+
+.trending-name {
+  margin-top: 63px;
+
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+  text-decoration-color: #e1d9bd;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+}
+
+.trends {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  height: 320px;
+  padding: 32px 0 64px 0;
+}
+
+.card-trends {
+  display: flex;
+  align-items: flex-end;
+  
+  width: 25%;
+  padding: 16px 21px 16px 21px;
+
+  background-color: black;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+  
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+  
+  position: relative;
+  z-index: 1;
+}
+
+.card-trends:before {
+  content: '';
+  display: block;
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  z-index: -1;
+}
+
+.border-trends {
+  border: 3px solid #b59f5b;
+  text-align: left;
+  padding: 37px 34px 5px 34px;
+}
+
+.ul-trends {
+  display: inline;
+  list-style: none;
+}
+
+.li-trends {
+  float: left;
+  margin-right: 19px;
+}
+
+.garden {
+  background-image: url(https://i.postimg.cc/V60BgCH8/trend1.jpg);
+}
+
+.cheese {
+  background-image: url(https://i.postimg.cc/4yCvSxrh/trend2.jpg);
+}
+
+.mountains {
+  background-image: url(https://i.postimg.cc/9XTYqy7P/trend3.jpg);
+}
+
+.vitamin {
+  background-image: url(https://i.postimg.cc/QCpgGr3Y/trend4.jpg);
+}
+
+/* ОСНОВНЫЕ ПОСТЫ */
+
+.page {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 0 15px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+
+  box-sizing: border-box;
+  max-width: 793px;
+  margin-bottom: 59px;
+}
+
+.card-img {
+  width: 381px;
+  height: 294px;
+}
+
+.header-content {
+  margin-left: 28px;
+}
+
+.ul-card {
+  display: inline;
+  list-style: none;
+}
+
+.li-card {
+  float: left;
+  margin-right: 19px;
+}
+
+.a-card {
+  text-decoration: none;
+  color: rgb(181, 159, 91);
+  font-family: bold;
+  font-size: 14px;
+  text-transform: uppercase; 
+}
+
+.card-name {
+  font-size: 20px;
+}
+
+.card-date {
+  display: inline-block;
+  font-size: 12px;
+  color: #888888;
+  font-family: regular;
+  margin-right: 14px;
+}
+
+.card-author {
+  display: inline-block;
+  font-family: bold;
+  font-size: 12px;
+}
+
+p {
+  font-family: regular;
+  font-size: 15px;
+}
+
+/* НОВЫЕ ПОСТЫ (МАЛЕНЬКИЕ) */
+
+.aside-card-mini {
+  max-width: 272px;
+}
+
+.card-mini-title {
+  font-family: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 14px;
+  text-decoration-color: #e1d9bd;
+  text-decoration-thickness: 3px;
+  text-underline-position: under;
+  
+  margin-bottom: 40px;
+}
+
+.card-mini {
+  box-sizing: border-box;
+  margin-bottom: 21px;
+  display: flex;
+  column-gap: 17px;
+}
+
+.card-mini-img {
+  width: 70px;
+  height: 70px;
+}
+
+.header-mini-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -4.5px;
+}
+
+.card-mini-name {
+  margin-top: 4.5px;
+  font-size: 14px;
+}
+
+.search-form {
+  display: flex;
+  margin: 60px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.search-field {
+  box-sizing: border-box;
+  width: 224px;
+  background-color: #f4f7f6;
+  padding-left: 10px;
+
+  font-family: regular;
+  font-size: 13px;
+  height: 48px;
+  
+  border: none;
+}
+
+.field:focus {
+  outline: none;
+  border: none;
+}
+
+.search-button {
+  background-color: #b59f5b;
+  width: 48px;
+  border: none;
+  
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  
+  cursor: pointer;
+}
+
+.newsletter-form {
+  margin-top: 21px;
+  width: 100%;
+}
+
+.newsletter-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 15px;
+  
+  font-family: bold;
+  font-size: 14px;
+  color: white;
+  
+  background-color: #b59f5b;
+  
+  border: none;
+  
+  cursor: pointer;
+}
+
+.field {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f4f7f6;
+  padding-left: 10px;
+
+  font-family: regular;
+  font-size: 13px;
+  height: 48px;
+  
+  border: none;
+}
+
+.tag {
+  margin-top: 60px;
+}
+
+.ul-tag {
+  width: 100%;
+  padding: 0;
+  
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.li-tag {
+  margin: 0 5px 5px 0;
+  padding: 8px 13px;
+  border: 3px solid #eeeeee;
+}
+
+.a-tag {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-family: bold;
+  font-size: 12px;
+}
+
+.subject {
+  margin-top: 60px;
+}
+
+.ul-subject {
+  width: 100%;
+  padding: 0;
+  
+  list-style: none;
+}
+
+.li-subject {
+  margin: 0 5px 5px 0;
+  padding: 8px 13px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.a-subject {
+  text-decoration: none;
+  color: black;
+  font-family: bold;
+  font-size: 14px;
+}
+
+/* НАШИ ПРОДУКТЫ */
+
+.products {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px 15px 54px 15px;
+}
+
+.product {
+  max-width: 300px;
+}
+
+.product-img {
+  width: 100%;
+  height: 204px;
+  padding: 0 21px;
+
+  z-index: -1;
+}
+
+.pillow {
+  background-image: url(https://i.postimg.cc/nV7xXVGj/shop-item-desk1.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.doll {
+  background-image: url(https://i.postimg.cc/Fs443tTP/shop-item-desk2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.frame {
+  background-image: url(https://i.postimg.cc/rFNL9hbq/shop-item-desk3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.product-body {
+  width: 100%;
+  height: 220px;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 21px 21px 26px 21px;
+  border: 3px solid #d3c59d;
+
+  z-index: 1;
+}
+
+.product-title {
+  font-family: bold;
+  font-size: 20px;
+}
+
+.product-description {
+  width: 300px;
+}
+
+.a-product {
+  text-decoration: none;
+  color: #b59f5b;
+  font-family: regular;
+  font-size: 15px;
+}
+
+.product__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product__prices {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__price_old {
+  text-decoration: line-through;
+  font-family: bold;
+  font-size: 14px;
+}
+
+.product__price-value {
+  font-family: bold;
+  font-size: 20px;
+}
+
+.product__button {
+  padding: 19px 30px;
+
+  font-family: bold;
+  font-size: 14px;
+  color: white;
+  
+  background-color: #b59f5b;
+  
+  border: none;
+  
+  cursor: pointer;
+}
+
+/* ИКОНКИ ТВИТТЕР.. */
+
+.socials {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.icon {
+  list-style: none;
+
+  padding: 31px;
+  
+  display: flex;
+  justify-content: center;
+  background-color: #f4f7f6;
+}
+
+.socials-item {
+  padding-left: 30px;
+}
+
+.social-icon {
+  text-decoration: none;
+  display: block;
+  
+  width: 21px;
+  height: 21px;
+}
+
+.social-icon__dribbble {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon__pinterest {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.social-icon__tumblr {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.end {
+  display: flex;
+  justify-content: space-around;
+
+  text-decoration: none;
+  font-family: bold;
+  font-size: 14px;
+  color: #999999;
+  
+  margin: 74px;
+}
+
+.popup {
+  width: 390px;
+  height: 589px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 54px 30px 0 30px;
+  
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  background-color: white;
+  
+  z-index: 1;
+  
+  display: none;
+}
+
+.trending-name {
+  padding: 0;
+  margin: 0;
+}
+
+.form-group {
+  width: 330px;
+  margin-top: 33px;
+}
+
+.popup-label {
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.popup-label {
+  font-family: regular;
+  font-size: 13px;
+}
+
+.select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  
+  width: 330px;
+  height: 48px;
+  padding: 16px 21px;
+  
+  border: none;
+  background-color: #f4f7f6;
+  color: #939594;
+  
+  cursor: pointer;
+  outline: none;
+}
+
+.select-svg {
+  width: 20px;
+  height: 20px;
+}
+
+.how-often {
+  font-family: regular;
+  font-size: 13px;
+}
+
+.field-label {
+  display: inline-block;
+  margin-bottom: 9px;
+  
+  font-family: regular;
+  font-size: 13px;
+}
+
+.input__yes-no {
+  cursor: pointer;
+}
+
+.yes-no {
+  font-family: regular;
+  font-size: 13px;
+}
+
+.textarea {
+  width: 288px;
+  min-height: 132px;
+  resize: none;
+  outline: none;
+  
+  padding: 21px;
+  
+  font-family: regular;
+  font-size: 13px;
+  color: #939594;
+  
+  border: none;
+  background-color: #f4f7f6;
+}
+
+.button-submit {
+  margin-top: -15px;
+  text-transform: uppercase;
+  width: 330px;
+}
+
+/* ПЛАНШЕТ И ТЕЛЕФОН */
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  .header {
+    background-image: url(https://i.postimg.cc/zG8wrDqY/banner-bg-tablet.jpg);
+    width: 100%;
+    max-width: 768px;
+  }
+  
+  .menu-button-label {
+    display: none;
+  }
+
+  .ul-menu {
+    opacity: 0;
+  }
+
+  .trends {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    padding: 32px 0 530px 0;
+  }
+
+  .border-trends {
+    width: 344px;
+    margin: 15px 19px;
+    padding: 25px;
+  }
+
+  .trends-name {
+    font-size: 17px;
+  }
+
+  .garden {
+    background-image: url(https://i.postimg.cc/V60BgCH8/trend1.jpg);
+    width: 383px;
+    height: 247px;
+  }
+
+  .cheese {
+    background-image: url(https://i.postimg.cc/4yCvSxrh/trend2.jpg);
+    width: 383px;
+    height: 247px;
+  }
+
+  .mountains {
+    background-image: url(https://i.postimg.cc/9XTYqy7P/trend3.jpg);
+    width: 383px;
+    height: 247px;
+  }
+
+  .vitamin {
+    background-image: url(https://i.postimg.cc/QCpgGr3Y/trend4.jpg);
+    width: 383px;
+    height: 247px;
+  }
+
+  .page {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 768px;
+    padding: 0px 34px 0 34px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 393px;
+
+    margin-right: 35px;
+    margin-bottom: 35px;
+
+    border-bottom: 3px solid #eeeeee;
+  }
+
+  .card-img {
+    width: 392px;
+    height: 294px;
+    margin: 17px 0;
+  }
+
+  .header-content {
+    max-width: 392px;
+    margin-left: 0;
+  }
+  
+  .aside-card-mini {
+    max-width: 271px;
+  }
+
+  .products {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 768px;
+    padding: 42px 35px 0 35px;
+  }
+  
+  .product {
+    max-width: 292px;
+    margin-bottom: 56px;
+  }
+  
+  .product-img {
+    background-size: 292px 228px;
+  }
+
+  .pillow {
+    background-image: url(https://i.postimg.cc/sgMRgGj8/shop-item-tablet1.jpg);
+  }
+
+  .doll {
+    background-image: url(https://i.postimg.cc/pL3MhVyd/shop-item-tablet2.jpg);
+  }
+
+  .frame {
+    background-image: url(https://i.postimg.cc/SK8FW0zf/shop-item-tablet3.jpg);
+  }
+  
+  .product-description {
+    max-width: 292px;
+  }
+  
+  .socials {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    max-width: 360px;
+    background-image: url(https://i.postimg.cc/Zqy6PWc3/banner-mobile.jpg);
+  }
+
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    max-width: 330px;
+    padding: 225px 15px 0 15px;
+  }
+
+  .logo {
+    width: 270px;
+  }
+
+  .main-title {
+    padding-top: 44px;
+    padding-bottom: 220px;
+    font-size: 26px;
+  }
+
+  .trending-name {
+    margin-top: 44px;
+
+    font-size: 16px;
+  }
+
+  .trends {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+    width: 100%;
+    padding-top: 32px;
+    margin-bottom: 400px;
+  }
+
+  .card-trends {
+    width: 100%;
+    padding: 0;
+  }
+
+  .border-trends {
+    width: 330px;
+    margin: 16px;
+    padding-top: 34px;
+    padding-left: 22px;
+    padding-bottom: 30px;
+  }
+
+  .trends-name {
+    font-size: 16px;
+  }
+
+  .garden {
+    background-image: url(https://i.postimg.cc/V60BgCH8/trend1.jpg);
+    height: 231px;
+  }
+
+  .cheese {
+    background-image: url(https://i.postimg.cc/4yCvSxrh/trend2.jpg);
+    height: 231px;
+  }
+
+  .mountains {
+    background-image: url(https://i.postimg.cc/9XTYqy7P/trend3.jpg);
+    height: 231px;
+  }
+
+  .vitamin {
+    background-image: url(https://i.postimg.cc/QCpgGr3Y/trend4.jpg);
+    height: 231px;
+  }
+
+  .page {
+    box-sizing: border-box;
+    max-width: 360px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    padding: 27px 15px 0 15px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 35px;
+    border-bottom: 3px solid #eeeeee;
+  }
+
+  .card-img {
+    width: 330px;
+    height: 254px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .header-content {
+    max-width: 330px;
+    margin-left: 0;
+  }
+
+  .card-name {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .aside-card-mini {
+    max-width: 330px;
+  }
+
+  .search-field {
+    width: 282px;
+  }
+
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    box-sizing: border-box;
+    max-width: 360px;
+    margin-top: 42px;
+    padding: 0 15px;
+  }
+  
+  .product-img {
+    background-size: 283px 285px;
+  }
+
+  .pillow {
+    background-image: url(https://i.postimg.cc/xTT2BFW9/shop-item-mobile1.jpg);
+  }
+
+  .doll {
+    background-image: url(https://i.postimg.cc/Qt3Lm6QG/shop-item-mobile2.jpg);
+  }
+
+  .frame {
+    background-image: url(https://i.postimg.cc/dtHYFjYr/shop-item-mobile3.jpg);
+  }
+
+  .product-title {
+    font-size: 17px;
+  }
+  
+  .product-description {
+    max-width: 284px;
+  }
+  
+  .socials {
+    max-width: 330px;
+  }
+}

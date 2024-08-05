@@ -64,6 +64,7 @@ body {
 /* ШАПКА */
 
 .header {
+  margin-bottom: 50px;
   background-image: url(https://i.postimg.cc/T340GM1d/banner-bg.jpg);
   background-color: #2F4F4F;
   background-position: center center;
@@ -104,6 +105,10 @@ body {
 
 .logo {
   width: 180px;
+}
+
+.side-menu {
+  display: none;
 }
 
 .menu-button {
@@ -473,16 +478,20 @@ p {
 /* НАШИ ПРОДУКТЫ */
 
 .products {
+  box-sizing: border-box;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 120px;
 
-  width: 100%;
+
   max-width: 1200px;
   margin: 0 auto;
-  padding: 42px 15px 54px 15px;
+  padding-top: 42px;
+  padding-bottom: 54px;;
 }
 
 .product {
+  box-sizing: border-box;
   max-width: 300px;
 }
 
@@ -638,9 +647,25 @@ p {
   margin: 74px;
 }
 
+/* ВСПЛЫВАЮЩЕЕ ОКНО */
+
+.parent_popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+  z-index: 999;
+
+  display: none;
+}
+
 .popup {
   width: 390px;
   height: 589px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   padding: 54px 30px 0 30px;
@@ -651,9 +676,32 @@ p {
   transform: translate(-50%, -25%);
   background-color: white;
   
-  z-index: 1;
+  z-index: 2;
   
-  display: none;
+
+ }
+
+.popup::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+
+  position: absolute;
+  top: -25px;
+  right: -10px;
+
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  background-image: url(https://i.postimg.cc/QMK3ysTx/form-x.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+
+  cursor: pointer;
+
+  z-index: 2;
 }
 
 .trending-name {
@@ -664,6 +712,8 @@ p {
 .form-group {
   width: 330px;
   margin-top: 33px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .popup-label {
@@ -679,7 +729,11 @@ p {
 .select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  
+  appearance:none;
+  background-image: url(https://i.postimg.cc/cLbWh66b/form-arrows-1.png);
+  background-size: 12px 20px;
+  background-repeat: no-repeat;
+  background-position: 94% 50%;
   
   width: 330px;
   height: 48px;
@@ -712,12 +766,33 @@ p {
 }
 
 .input__yes-no {
+  display: none;
   cursor: pointer;
 }
 
 .yes-no {
+  margin-right: 15%;
   font-family: regular;
   font-size: 13px;
+}
+
+.yes-no::before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+
+  background-image: url(https://i.postimg.cc/9M3h3SdP/form-empty-circle.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 20px;
+}
+
+.input__yes-no:checked ~ .yes-no::before {
+  background-image: url(https://i.postimg.cc/85hVTH42/form-circle.png);
 }
 
 .textarea {
@@ -747,25 +822,27 @@ p {
 @media (min-width: 641px) and (max-width: 1200px) {
   .header {
     background-image: url(https://i.postimg.cc/zG8wrDqY/banner-bg-tablet.jpg);
-    width: 100%;
-    max-width: 768px;
+    width: 100vw;
   }
   
-  .menu-button-label {
-    display: none;
+  .side-menu {
+    position: absolute;
+    display: block;
+    top: 1%;
+    right: 1%;
   }
-
+  
   .ul-menu {
-    opacity: 0;
+    display: none;
   }
 
   .trends {
     display: grid; 
     grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
     grid-gap: 2px;
     
-    width: 100%;
-    max-width: 768px;
+    width: 100vw;
     box-sizing: border-box;
     padding: 32px 0 530px 0;
   }
@@ -806,7 +883,7 @@ p {
 
   .page {
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     max-width: 768px;
     padding: 0px 34px 0 34px;
   }
@@ -838,9 +915,10 @@ p {
   }
 
   .products {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-gap: 15px;
     
     box-sizing: border-box;
     width: 100%;
@@ -881,7 +959,6 @@ p {
 
 @media (max-width: 640px) {
   .header {
-    max-width: 360px;
     background-image: url(https://i.postimg.cc/Zqy6PWc3/banner-mobile.jpg);
   }
 
@@ -894,6 +971,17 @@ p {
 
   .logo {
     width: 270px;
+  }
+  
+  .side-menu {
+    position: absolute;
+    display: block;
+    top: 1%;
+    right: 1%;
+  }
+
+  .ul-menu {
+    display: none;
   }
 
   .main-title {
@@ -915,7 +1003,7 @@ p {
     gap: 1px;
     width: 100%;
     padding-top: 32px;
-    margin-bottom: 400px;
+    padding-bottom: 590px;
   }
 
   .card-trends {

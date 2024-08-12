@@ -480,8 +480,7 @@ p {
 .products {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  gap: 120px;
+  justify-content: space-between;
 
 
   max-width: 1200px;
@@ -496,9 +495,11 @@ p {
 }
 
 .product-img {
+  box-sizing: border-box;
   width: 100%;
   height: 204px;
   padding: 0 21px;
+  background-clip: content-box;
 
   z-index: -1;
 }
@@ -522,8 +523,7 @@ p {
 }
 
 .product-body {
-  width: 100%;
-  height: 220px;
+  height: 240px;
   margin-top: -30px;
   margin-left: auto;
   margin-right: auto;
@@ -539,7 +539,7 @@ p {
 }
 
 .product-description {
-  width: 300px;
+  width: 258px;
 }
 
 .a-product {
